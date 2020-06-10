@@ -117,49 +117,43 @@
             </el-row>
             <el-row :gutter="20">
               <el-col :span="8">
-                <el-form-item label="公司地址" prop="identity_card">
-                  <el-input v-model="loanApplicationForm.identity_card"></el-input>
+                <el-form-item label="公司地址" prop="address3">
+                  <el-input v-model="loanApplicationForm.address3"></el-input>
                 </el-form-item>
               </el-col>
             </el-row>
             <el-row :gutter="20">
               <el-col :span="8">
-                <el-form-item label="婚姻状态" prop="sex">
-                  <el-select v-model="loanApplicationForm.marriage" placeholder="请选择">
-                    <el-option label="已婚" value="married"></el-option>
-                    <el-option label="未婚" value="unmarried"></el-option>
-                  </el-select>
+                <el-form-item label="公司类型" prop="company_type">
+                  <el-input v-model="loanApplicationForm.company_type"></el-input>
                 </el-form-item>
               </el-col>
               <el-col :span="8">
-                <el-form-item label="教育程度" prop="education">
-                  <el-select v-model="loanApplicationForm.education" placeholder="请选择">
-                    <el-option label="高中" value="highschool"></el-option>
-                    <el-option label="大学" value="college"></el-option>
-                  </el-select>
+                <el-form-item label="公司邮箱" prop="company_email">
+                  <el-input v-model="loanApplicationForm.company_email"></el-input>
                 </el-form-item>
               </el-col>
               <el-col :span="8">
-                <el-form-item label="居住地址" prop="address1">
-                  <el-input v-model="loanApplicationForm.address1"></el-input>
+                <el-form-item label="公司电话" prop="company_phone">
+                  <el-input v-model="loanApplicationForm.company_phone"></el-input>
                 </el-form-item>
               </el-col>
             </el-row>
 
             <el-row :gutter="20">
               <el-col :span="8">
-                <el-form-item label="户籍地址" prop="address2">
-                  <el-input v-model="loanApplicationForm.address2"></el-input>
+                <el-form-item label="收支情况" prop="income">
+                  <el-input v-model="loanApplicationForm.income"></el-input>
                 </el-form-item>
               </el-col>
               <el-col :span="8">
-                <el-form-item label="居住电话" prop="phone">
-                  <el-input v-model="loanApplicationForm.phone"></el-input>
+                <el-form-item label="关系1" prop="contact">
+                  <el-input v-model="loanApplicationForm.contact"></el-input>
                 </el-form-item>
               </el-col>
               <el-col :span="8">
-                <el-form-item label="手机号" prop="mobile_phone">
-                  <el-input v-model="loanApplicationForm.mobile_phone"></el-input>
+                <el-form-item label="姓名" prop="contact_name">
+                  <el-input v-model="loanApplicationForm.contact_name"></el-input>
                 </el-form-item>
               </el-col>
             </el-row>
