@@ -7,6 +7,7 @@
 <style lang="scss">
 @import url('./assets/css/reset.css');
 @import url('./assets/css/base.css');
+@import url('./static/css/animate.min.css');
 #app {
   width: 100%;
   height: 100%;
