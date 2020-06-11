@@ -20,6 +20,11 @@ const router = new Router({
           path: 'loanApplication',
           name: 'loanApplication',
           component: () => import('../views/loanApplication/index')
+        },
+        {
+          path: 'applicationManagement',
+          name: 'applicationManagement',
+          component: () => import('../views/applicationManagement/index')
         }
 
     ]
@@ -31,16 +36,12 @@ const router = new Router({
     }
   ]
 })
-// router.beforeEach((to, from, next) => {
-//   const isLogin = sessionStorage.AdminToken ? true : false;
-//   if(isLogin) {
-//     next();
-//   }else {
-//     if(to.path == 'login') {
-//       next();
-//     }else {
-//       next('/login')
-//     }
-//   }
-// })
+router.beforeEach((to, from, next) => {
+  const isLogin = sessionStorage.AdminToken ? true : false;
+  if(to.path == '/login') {
+    next()
+  }else {
+    isLogin ? next() : next('/login');
+  }
+})
 export default router;

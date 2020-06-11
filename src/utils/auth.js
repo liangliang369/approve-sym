@@ -5,9 +5,9 @@ export function setToken(data) {
 }
 //获取token
 export function getToken() {
-  sessionStorage.getItem(tokenKey);
+  return sessionStorage.getItem(tokenKey)
 }
 //存储token
-export function removeToken(data) {
+export function removeToken() {
   sessionStorage.removeItem(tokenKey);
 }

@@ -5,16 +5,17 @@
       class="el-menu-vertical-demo"
       background-color="#545c64"
       text-color="#fff"
+      router
       active-text-color="#ffd04b">
-      <el-menu-item index="1">
+      <el-menu-item index="/home">
         <i class="el-icon-menu"></i>
         <span slot="title">首页</span>
       </el-menu-item>
-      <el-menu-item index="2">
+      <el-menu-item index="/loanApplication">
         <i class="el-icon-document"></i>
         <span slot="title">贷款申请</span>
       </el-menu-item>
-      <el-menu-item index="3">
+      <el-menu-item index="/applicationManagement">
         <i class="el-icon-setting"></i>
         <span slot="title">申请管理</span>
       </el-menu-item>
